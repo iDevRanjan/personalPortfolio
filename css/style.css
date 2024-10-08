@@ -360,7 +360,7 @@ main {
                 line-height: 1.5;
                 margin-left: 30px;
                 margin-bottom: 10px;
-                list-style: url(/images/sun-25.png);
+                list-style: url(../images/sun-25.png);
             }
         }
 
@@ -425,7 +425,7 @@ main {
             display: flex;
             justify-content: space-between;
             margin-top: 75px;
-            background: url(/images/shape-2.webp), url(/images/shape-5.png), url(/images/shape-5.png);
+            background: url(../images/shape-2.webp), url(../images/shape-5.png), url(../images/shape-5.png);
             background-repeat: no-repeat;
             background-size: 300px;
             background-position: center, left top, right bottom;
@@ -526,7 +526,7 @@ main {
         padding: 30px;
         border: 1.5px outset var(--ui-color);
         border-radius: 32px;
-        background: url(/images/pattern-1.webp);
+        background: url(../images/pattern-1.webp);
 
         .w-dev {
             h3 {
@@ -859,7 +859,7 @@ main {
         padding-top: 60px;
         border: 1.5px outset var(--ui-color);
         border-radius: 32px;
-        background: url(/images/pattern-2.jpeg);
+        background: url(../images/pattern-2.jpeg);
 
         h2 {
             right: 30px;
@@ -1346,7 +1346,7 @@ main {
             right: -30px;
             width: 50px;
             height: 50px;
-            background-image: url(/images/Hero-svg.svg);
+            background-image: url(../images/Hero-svg.svg);
             background-repeat: no-repeat;
             background-position: center;
         }
