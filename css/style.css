@@ -73,6 +73,10 @@ header {
                 .offcanvas-logo {
                     display: none;
                 }
+
+                .off-cnvs-social {
+                    display: none;
+                }
             }
         }
 
@@ -839,7 +843,6 @@ main {
                 animation-play-state: paused !important;
             }
         }
-
     }
 
 /* Project Section */
@@ -1034,6 +1037,7 @@ main {
             width: 450px;
             border-radius: 85px;
         }
+
         > div {
             position: absolute;
             bottom: 0;
@@ -1044,7 +1048,6 @@ main {
             background: rgba(255, 102, 0, 0.5);
             border-radius: 50px;
             z-index: -1;
-
         }
     }
 
@@ -1403,7 +1406,7 @@ footer {
     }
 
     header {
-        top: 20px;
+        top: 10px;
         width: 100%;
 
         nav {
@@ -1411,7 +1414,9 @@ footer {
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
-            padding: 5px 10px;
+            padding: 5px;
+            padding-left: 8px;
+            border-width: 1px;
 
             .m-logo, .m-menu {
                 display: flex;
@@ -1436,10 +1441,10 @@ footer {
 
             ul {
                 position: relative;
-                padding-top: 100px;
+                padding-top: 80px;
                 padding-inline: 20px;
                 background: rgba(255, 255, 255, 0.5);
-                box-shadow: -5px 0 5px rgba(255, 102, 0, 0.5);
+                box-shadow: -2px 0 5px rgba(255, 102, 0, 0.5);
                 backdrop-filter: blur(25px);
 
                 .close-menu {
@@ -1456,7 +1461,7 @@ footer {
                 .offcanvas-logo {
                     text-align: center;
                     line-height: 0;
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
 
                     img {
                         width: 60px;
@@ -1487,6 +1492,38 @@ footer {
                 .md-logo {
                     display: none;
                 }
+
+                .off-cnvs-social {
+                    margin-top: 40px;
+
+                    p {
+                        font-weight: 600;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid var(--ui-hvr-colr);
+                    }
+    
+                    > div {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 10px;
+    
+                        > a {
+                            display: flex;
+                            align-items: center;
+    
+                            img {
+                                width: 30px;
+                                border-radius: 50px;
+                                filter: grayscale(1);
+                                transition: filter 0.25s ease-in-out;
+    
+                                &:hover {
+                                    filter: none;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             [popover] {
@@ -1495,7 +1532,7 @@ footer {
                 top: 0;
                 right: -25vw;
                 width: 60vw;
-                height: 100%;
+                height: 100vh;
                 opacity: 0;
                 transition: all 0.5s ease allow-discrete;
             }
@@ -1543,6 +1580,7 @@ footer {
 
             h1 {
                 font-size: 42px;
+                line-height: 1.2;
             }
 
             .h-img-crl {
@@ -1906,6 +1944,26 @@ footer {
                         }
                     }
                 }
+
+                .a-p {
+                    position: initial;
+                    bottom: unset;
+                    right: unset;
+                    margin-top: 5px;
+                    flex-basis: 100%;
+
+                    button {
+                        position: relative;
+                        font-size: 18px;
+                        margin-inline: auto;
+                        padding: 7px 10px;
+
+                        > span {
+                            font-size: 18px;
+                        }
+                    }
+
+                }
             }
         }
 
@@ -2012,7 +2070,6 @@ footer {
             gap: 20px;
             margin-bottom: 20px;
             padding-bottom: 20px;
-    
 
             img {
                 height: 50px;
@@ -2024,7 +2081,6 @@ footer {
                 gap: 10px 20px;
                 font-size: 16px;
             }
-
         }
 
         .ftr-info {
