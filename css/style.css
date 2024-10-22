@@ -555,6 +555,7 @@ main {
                 width: calc(100% - 75px);
 
                 div {
+                    position: relative;
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
@@ -578,11 +579,6 @@ main {
                     &:nth-child(6) {
                         translate: 0 60%;
                     }
-
-                    img, p:nth-child(2) {
-                        font-size: 20px;
-                        width: 50%;
-                    }
     
                     img {
                         width: 50px;
@@ -591,13 +587,14 @@ main {
                     }
 
                     p:nth-child(2) {
-                        display: flex;
-                        justify-content: space-between;
+                        font-size: 20px;
 
                         span {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
                             font-size: 12px;
-                            align-content: center;
-                            padding: 0 8px;
+                            padding: 4px 8px;
                             background: var(--font-c);
                             border-radius: 20px;
                             box-shadow: 2px 2px 4px inset;
@@ -1788,17 +1785,12 @@ footer {
                         img {
                             width: 35px;
                         }
-
-                        img, p:nth-child(2) {
-                            font-size: 14px;
-                        }
                         
                         p:nth-child(2) {
-                            display: initial;
+                            font-size: 14px;
 
                             span {
                                 position: absolute;
-                                right: 10px;
                                 font-size: 10px;
                                 padding: 2px 4px;
                             }
